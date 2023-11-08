@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Selection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@700&family=Cormorant+Garamond:wght@300&family=Gabarito&family=Lobster&family=Nosifer&family=Open+Sans:wght@300&family=Playpen+Sans:wght@200&family=Roboto+Slab:wght@300&family=Roboto:wght@500&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .items {
+            display: flex;
+            gap:50px;
+        }
+        h1, p, .btn {
+            text-align:center;
+        }
+        .Beginner {
+            border:2px solid black;
+            padding:10px;
+            border-radius: 20px;
+        }
+        .Intermediate {
+            border:2px solid red;
+            padding:10px;
+            border-radius: 20px;
+            color:red;
+        }
+        .Advanced {
+            border:2px solid black;
+            padding:10px;
+            border-radius: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 70px;
+        }
+        .in {
+            font-weight: bolder;
+
+        }
+        img {
+            height:150px;
+        }
+        .Beginner, .Advanced, .Intermediate {
+            height:150px;
+            width:150px;
+            display: flex;
+                justify-content: center;
+        }
+        button {
+            height:50px;
+            width:200px;
+            border:0;
+            background-color: green;
+            color:white;
+            margin-top: 50px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+        @media(max-width:600px) {
+            body {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            .center {
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Select user type</h1>
+        <div class="items">
+            <div>
+             <div class="Beginner"><img src="beginner.png" alt="baby"></div>
+              <p>Beginner</p>
+            </div>
+           <div>
+               <div class="Intermediate"><img src="intermediate.png" alt="toddler"></div>
+               <p class="in">Intermediate</p>
+           </div>
+           <div class="center">
+              <div class="Advanced"><img src="./advanced.png" alt="advanced"></div>
+              <p>Advanced</p>
+           </div>
+    </div>
+    <div class="btn"><button>Next Step</button></div>
+  </div>
+</body>
+</html>
